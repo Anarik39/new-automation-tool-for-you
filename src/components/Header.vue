@@ -1,16 +1,16 @@
 <template>
-  <header class="header">
-    <div class="container">
+  <v-app-bar app elevate-on-scroll color="#ffffff">
+    <v-container>
       <nav class="header__nav">
         <router-link to="/"
-          ><img src="../assets/img/logo.svg" alt="index"
+          ><img src="../assets/img/header/index.svg" alt="Index"
         /></router-link>
-        <router-link to="/about"
-          ><img src="../assets/img/Contacts.svg" alt="Contacts"
+        <router-link to="/contacts"
+          ><img src="../assets/img/header/contacts.svg" alt="Contacts"
         /></router-link>
       </nav>
-    </div>
-  </header>
+    </v-container>
+  </v-app-bar>
 </template>
 
 <style lang="scss" scoped>
@@ -18,22 +18,9 @@
   &__nav {
     display: flex;
     justify-content: space-between;
-    padding-top: 34px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .header {
-    &__nav {
-      padding-top: 47px;
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  .header {
-    &__nav {
-      padding-top: 16px;
+    align-items: center;
+    & img {
+      vertical-align: top;
     }
   }
 }

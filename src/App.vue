@@ -1,43 +1,55 @@
 <template>
-  <div id="app">
+  <v-app>
     <Header />
     <router-view />
     <Footer />
     <button-up />
-  </div>
+  </v-app>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 export default {
+  name: "App",
   components: {
     Header,
     Footer,
     ButtonUp: () => import("./components/ButtonUp.vue"),
   },
-  name: "App",
 };
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
-#app {
+#app,
+button,
+input,
+select,
+textarea {
   font-family: "Roboto", sans-serif;
 }
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 a {
   text-decoration: none;
 }
 .container {
-  max-width: 1140px;
-  margin: 0 auto;
+  padding: 0;
 }
-@media (max-width: 1156px) {
+.v-application p {
+  margin-bottom: 0;
+}
+.v-toolbar__content {
+  padding: 0;
+}
+@media (min-width: 1156px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 1155px) {
   .container {
     padding: 0 32px;
   }

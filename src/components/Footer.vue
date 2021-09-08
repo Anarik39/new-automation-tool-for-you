@@ -62,8 +62,8 @@ export default {};
   }
   &__info {
     display: grid;
-    grid-template-columns: 316px 1fr 1fr;
-    grid-gap: 76px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 54px;
     padding-left: 21px;
   }
   &__copy {
@@ -89,7 +89,7 @@ export default {};
     letter-spacing: 0.06em;
   }
   &__link {
-    padding: 15px 80px;
+    padding: 15px 82px;
     background: #5a98d0;
     cursor: pointer;
     font-size: 16px;
