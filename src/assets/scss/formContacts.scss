@@ -1,0 +1,108 @@
+.contacts-form {
+  &__wrapper {
+    padding: 56px 60px 56px 52px;
+    background: #ffffff;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #1f3f68;
+    line-height: 30px;
+    width: 100%;
+  }
+  &__container {
+    display: grid;
+    grid-gap: 32px;
+    margin-bottom: 62px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    margin-bottom: 48px;
+  }
+  &__label {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    opacity: 0.8;
+  }
+  &__input {
+    border: 1px solid #356ead;
+    border-radius: 10px;
+    padding: 21px 35px;
+    outline: none;
+    width: 100%;
+    height: 72px;
+    margin-top: 8px;
+    &:hover {
+      box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    }
+    &_size_textarea {
+      height: 144px;
+      resize: none;
+    }
+    &::placeholder {
+      opacity: 0.3;
+      letter-spacing: 0.04em;
+    }
+  }
+
+  &__btn {
+    padding: 22px 0;
+    width: 100%;
+    background: #5a98d0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    border: 1px solid #5a98d0;
+    transition: 0.4s;
+    &:hover {
+      color: #5a98d0;
+      background: #ffffff;
+    }
+  }
+}
+
+@media (max-width: 1156px) {
+  .contacts-form {
+    &__wrapper {
+      padding-right: 52px;
+      padding-bottom: 38px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .contacts-form {
+    &__wrapper {
+      padding: 34px 35px 36px 37px;
+    }
+    &__container {
+      margin-bottom: 36px;
+      grid-gap: 22px;
+    }
+    &__title {
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 21px;
+    }
+    &__label {
+      font-size: 14px;
+      line-height: 30px;
+    }
+    &__input {
+      padding: 13px 22px;
+      height: 47px;
+      margin-top: -7px;
+      &_size_textarea {
+        height: 91px;
+      }
+    }
+
+    &__btn {
+      padding: 9px 0;
+    }
+  }
+}

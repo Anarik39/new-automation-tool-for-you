@@ -13,6 +13,7 @@
 <script>
 import GoTop from "@inotom/vue-go-top";
 export default {
+  name: "ButtonUp",
   components: {
     GoTop,
   },

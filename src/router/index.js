@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Index from "../views/Index.vue";
+import Index from "../views/PageIndex.vue";
 
 Vue.use(VueRouter);
 
@@ -14,7 +14,13 @@ const routes = [
     path: "/contacts",
     name: "Contacts",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Contacts.vue"),
+      import(/* webpackChunkName: "about" */ "../views/PageContacts.vue"),
+  },
+  {
+    path: "*",
+    name: "Page404",
+    component: () =>
+      import(/* webpackChunkName: "Page404" */ "../views/Page404.vue"),
   },
 ];
 
@@ -28,6 +34,7 @@ const getTitleByRouteName = (routeName) => {
   return {
     Index: "Page index",
     Contacts: "Page Contacts",
+    Page404: "Not found",
   }[routeName];
 };
 

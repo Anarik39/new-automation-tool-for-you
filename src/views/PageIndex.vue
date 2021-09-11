@@ -26,7 +26,7 @@
             <div class="card">
               <img
                 class="card__img"
-                src="../assets/img/main/index/cards/card-1.svg"
+                src="../assets/img/index/cards/card-1.svg"
                 alt="photo"
               />
               <div class="card__info">
@@ -43,7 +43,7 @@
             <div class="card">
               <img
                 class="card__img"
-                src="../assets/img/main/index/cards/card-2.svg"
+                src="../assets/img/index/cards/card-2.svg"
                 alt="photo"
               />
               <div class="card__info">
@@ -60,7 +60,7 @@
             <div class="card">
               <img
                 class="card__img"
-                src="../assets/img/main/index/cards/card-3.svg"
+                src="../assets/img/index/cards/card-3.svg"
                 alt="photo"
               />
               <div class="card__info">
@@ -109,11 +109,8 @@
                 {{ item.text }}
               </p>
             </div>
-            <v-dialog v-model="dialog" width="50%">
+            <v-dialog width="unset" v-model="dialog">
               <img :src="imgProject" alt="photo" />
-              <v-btn color="blue" dark @click="dialog = false">
-                CLOSE
-              </v-btn>
             </v-dialog>
           </div>
         </div>
@@ -124,22 +121,22 @@
 
 <script>
 export default {
-  name: "Home",
+  name: "Index",
   data() {
     return {
       imgProject: null,
       dialog: false,
       projects: [
         {
-          img: require("../assets/img/main/index/projects/item-1.png"),
+          img: require("../assets/img/index/projects/item-1.png"),
           text: "Car-Rapetition App",
         },
         {
-          img: require("../assets/img/main/index/projects/item-2.png"),
+          img: require("../assets/img/index/projects/item-2.png"),
           text: "Sparklite App",
         },
         {
-          img: require("../assets/img/main/index/projects/item-3.png"),
+          img: require("../assets/img/index/projects/item-3.png"),
           text: "Car-Rapetition App",
         },
       ],

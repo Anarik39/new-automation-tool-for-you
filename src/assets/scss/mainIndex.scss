@@ -21,7 +21,7 @@ main {
     rgba(152, 195, 232, 0) 42.12%
   );
   &__wrapper {
-    background-image: url(../assets/img/main/index/background-top.png);
+    background-image: url(../assets/img/index/background-top.png);
     background-repeat: no-repeat;
     background-position: right 100px;
     background-size: 49%;
@@ -83,6 +83,7 @@ main {
   text-align: center;
   &__img {
     height: 120px;
+    margin: 0 auto;
   }
   &__info {
     padding-top: 48px;
@@ -137,6 +138,10 @@ main {
 }
 
 .project-item {
+  &:hover {
+    box-shadow: 5px 20px 50px rgb(16 112 177 / 20%);
+  }
+  cursor: pointer;
   position: relative;
   &_first {
     grid-column-start: 1;
@@ -146,6 +151,7 @@ main {
     width: 100%;
     display: block;
   }
+
   &__text {
     font-size: 32px;
     letter-spacing: 0.05em;
@@ -232,7 +238,7 @@ main {
       margin: 0 auto;
     }
     &__text {
-      margin: 12px 0 24px;
+      margin: 12px auto 24px;
     }
     &__btn {
       padding: 1px 8px;

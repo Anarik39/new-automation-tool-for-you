@@ -1,0 +1,67 @@
+#app,
+button,
+input,
+select,
+textarea {
+  font-family: "Roboto", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding: 0;
+}
+.v-application p {
+  margin-bottom: 0;
+}
+.v-toolbar__content {
+  padding: 0;
+}
+.dialog {
+  position: relative;
+  &__btn {
+    position: absolute;
+    color: #5a98d0;
+    background: #ffffff;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #5a98d0;
+    transition: 0.4s;
+    border-radius: 10px;
+    &:hover {
+      background: #5a98d0;
+      color: #ffffff;
+    }
+    &_position-main {
+      top: 30px;
+      right: 30px;
+    }
+    &_position-done {
+      top: 50%;
+      right: 20px;
+      transform: translate(0, -50%);
+    }
+  }
+}
+@media (min-width: 1156px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 1155px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0 16px;
+  }
+}
