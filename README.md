@@ -1,6 +1,6 @@
 # New automation tool for you
 
-I made a SPA application based on the Figma layout.
+SPA application based on the Figma layout.
 
 Stack: Vue 2, Vue-router, Vuex, Vuetify
 
